@@ -11,13 +11,8 @@ collect the results.
 
 I used `linux-next` for analyzing commits.
 
-```
-$ git remote add linux-next https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git
 
-$ git checkout -b local-next `git tag -l "next-*" | tail -n 1` 
-```
-
-Then I ran 
+I ran 
 
 ```shell
 $ git log --oneline --decorate
