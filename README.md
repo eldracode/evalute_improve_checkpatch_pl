@@ -199,6 +199,8 @@ Now I have to find the count of each Error type.
 
 * `uniq -c` : does exactly that and give me required analysis of error types.
 
+**Other detailed statistics can be found in [STATS.md](./STATS.md) .**
+
 ### Screenshots
 
 * for getting stats
