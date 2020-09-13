@@ -30,7 +30,7 @@ function space(){
 
 for i in $TYPES
 do
-	COUNT=`grep -c "$i" newfile.txt`
+	COUNT=`grep -c "$i" file.txt`
 	if [ $COUNT -gt 0 ]
 	then
 		let DIF=$LL-${#i}
