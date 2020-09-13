@@ -72,21 +72,3 @@ foreach my $i (@types){
 * For checks
 
 ![check](Images/6.png)
-
-
-### Analysis
-
-I did my analysis over some errors I found with checkpatch.
-Almost everytime I found that checkpatch is correct.
-
-But in some cases I found it to be Ambiguous, like 
-If the authors' changes are not erroneous according to kernel style
-but the line next to it (which is there in diff but not added by author) is
-erroneous, then too checkpatch shows error in patch/commit.
-(Actually, I am doubtful on this, don't know if this error is expected to occur or not)
-
-Example commits: 
-
-* [004ed42638f4](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=linux-5.8.y&id=004ed42638f4) : FSF_MAILING_LIST error.
-
-* [41022d35ddf2](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=41022d35ddf219361f33b59034cc67430a6a590f) : OPEN_BRACE error.
